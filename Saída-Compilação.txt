@@ -1,0 +1,5 @@
+﻿Build iniciado...
+1>------ Compilação iniciada: Projeto: CalculadoraIMC, Configuração: Debug Any CPU ------
+1>Ignorando analisadores para acelerar a construção. Você pode executar o comando 'Build' ou 'Rebuild' para executar os analisadores.
+1>CalculadoraIMC -> C:\Users\Familia Pádua\Desktop\CalculadoraIMC\CalculadoraIMC\bin\Debug\net5.0\CalculadoraIMC.dll
+========== Compilar: 1 com êxito, 0 com falha, 0 atualizados, 0 ignorados ==========
