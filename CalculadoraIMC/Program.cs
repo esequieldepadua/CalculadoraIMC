@@ -7,37 +7,29 @@ namespace DiagnosticoPrevio
         static void Main(string[] args)
         {
             int resposta;
+            string nome,sexo,categoria;
+            int idade;
+            float imc, peso, altura;
             do
             {
-                Console.Clear();
-                Console.WriteLine("Olá, Bem Vindo ao Software de Calculo de IMC");
-
-                Console.WriteLine("Escreva Seu nome");
-                string nome = Console.ReadLine();
+                
+                Console.WriteLine("Informe seu nome");
+                nome = Console.ReadLine();
 
                 Console.WriteLine("Qual Seu Sexo?");
-                string sexo = Console.ReadLine();
+                sexo = Console.ReadLine();
 
                 Console.WriteLine("Qual Sua Idade");
-                int idade = 0;
-                while (!int.TryParse(Console.ReadLine(), out idade))
-                {
-                    int.TryParse(Console.ReadLine(), out idade);
-                }
-
+                idade = int.Parse(Console.ReadLine());
+                
+              
                 Console.WriteLine("Digite Sua altura(Ex.:0,00)");
-                float altura = 0;
-                while (!float.TryParse(Console.ReadLine(), out altura))
-                {
-                    float.TryParse(Console.ReadLine(), out altura);
-                }
+                altura = float.Parse(Console.ReadLine());
+                
                 Console.WriteLine("Digite Seu Peso");
-                float peso = 0;
-                while (!float.TryParse(Console.ReadLine(), out peso))
-                {
-                    float.TryParse(Console.ReadLine(), out peso);
-                }
-                string categoria = "";
+                peso = float.Parse(Console.ReadLine());
+
+                categoria = "";
 
 
                 if (idade < 12)
@@ -64,7 +56,7 @@ namespace DiagnosticoPrevio
                 }
 
 
-                float imc = peso / (altura * altura);
+                imc = peso / (altura * altura);
 
 
 
@@ -74,17 +66,14 @@ namespace DiagnosticoPrevio
                 Console.WriteLine($"idade: {idade}");
                 Console.WriteLine($"Altura: {altura}");
                 Console.WriteLine($"Peso: {peso}");
-                Console.WriteLine($"Categoria: {categoria} \r\n");
-                Console.WriteLine($"{nome}, Seu imc é: {String.Format("{0:0.00}", imc)}\r\n");
+                Console.WriteLine($"Categoria: {categoria}");
+                Console.WriteLine("");
+                Console.WriteLine($"{nome}, Seu imc é: {String.Format("{0:0.00}", imc)}");
+                Console.WriteLine("");
 
 
-
-
-
-
-
-
-                Console.WriteLine("IMC Desejável: Entre 20 e 24 \r\n\r\n");
+                Console.WriteLine("IMC Desejável: Entre 20 e 24 ");
+                Console.WriteLine("");
 
                 if (imc < 20)
                 {
